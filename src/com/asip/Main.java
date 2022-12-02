@@ -3,7 +3,8 @@ package com.asip;
 public class Main {
 
     public static void main(String[] args) {
-        Card c = new Card();
-        c.setColor(CardColor.Clubs);
+       Deck deck = new Deck();
+       deck.shuffle();
+       System.out.println(deck.cards);
     }
 }

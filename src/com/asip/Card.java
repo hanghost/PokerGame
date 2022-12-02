@@ -15,7 +15,9 @@ public class Card {
     }
 
     public File getCardImage(){
-        return null;
+        String imgName = this.nr + ""+this.color+".png";
+        File image = new File(imgName);
+        return image;
     }
 
     public void setNr(CardNumber nr) {
