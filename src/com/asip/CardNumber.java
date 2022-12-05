@@ -3,7 +3,18 @@ package com.asip;
 
 public enum CardNumber {
 
+    Ace,
 	Two,
     Three,
-    Four
+    Four,
+    Five,
+    Six,
+    Seven,
+    Eight,
+    Nine,
+    Ten,
+    Jack,
+    Queen,
+    King
+
 }
