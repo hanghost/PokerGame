@@ -7,4 +7,5 @@ public class Player {
     String name;
     BigDecimal money;
     ArrayList<Card> playerHand;
+
 }
