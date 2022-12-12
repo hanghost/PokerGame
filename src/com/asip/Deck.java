@@ -1,7 +1,9 @@
 package com.asip;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class Deck {
 
@@ -10,8 +12,9 @@ public class Deck {
     public Deck(){
         cards = new ArrayList<Card>();
 
-        for(CardNumber nr : CardNumber.values()){
-            for(CardColor color : CardColor.values()){
+
+        for(CardColor color : CardColor.values()){
+            for(CardNumber nr : CardNumber.values()){
                 Card card = new Card();
                 card.setNr(nr);
                 card.setColor(color);
@@ -25,12 +28,12 @@ public class Deck {
     }
 
     public ArrayList<Card> dealHand() {
-        //get 5 cards
+        //get 5 cards RANDOM
         return null;
     }
 
     public ArrayList<Card> dealHand(int nrOfCards) {
-        //get x cards
+        //get x cards RANDOM
         return null;
     }
 }
