@@ -3,6 +3,7 @@ package com.asip;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Deck {
@@ -28,12 +29,12 @@ public class Deck {
     }
 
     public ArrayList<Card> dealHand() {
-        //get 5 cards RANDOM
-        return null;
+        return dealHand(5);
     }
 
     public ArrayList<Card> dealHand(int nrOfCards) {
-        //get x cards RANDOM
-        return null;
+        ArrayList<Card> cardsToDeal = new ArrayList<Card>(this.cards.subList(0, nrOfCards));
+        this.cards.removeAll(cardsToDeal);
+        return cardsToDeal;
     }
 }
