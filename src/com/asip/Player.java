@@ -8,4 +8,13 @@ public class Player {
     BigDecimal money;
     ArrayList<Card> playerHand;
 
+    public void printHand(){
+        for(Card card : this.playerHand){
+            System.out.println(card);
+        }
+    }
+
+    public String toString(){
+        return name +" "+money;
+    }
 }

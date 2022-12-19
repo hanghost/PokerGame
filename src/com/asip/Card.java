@@ -3,7 +3,7 @@ package com.asip;
 import java.io.File;
 
 public class Card {
-
+    public static final String backImagePath = "back.jpg";
     private CardNumber nr;
     private CardColor color;
 
@@ -15,9 +15,12 @@ public class Card {
     }
 
     public File getCardImage(){
-        String imgName = this.nr + ""+this.color+".png";
-        File image = new File(imgName);
+        File image = new File(getCardPath());
         return image;
+    }
+
+    public String getCardPath(){
+        return this.nr + ""+this.color+".png";
     }
 
     public void setNr(CardNumber nr) {
@@ -34,6 +37,10 @@ public class Card {
 
     public CardColor getColor() {
         return this.color;
+    }
+
+    public String toString(){
+        return this.getCardName();
     }
 }
 
